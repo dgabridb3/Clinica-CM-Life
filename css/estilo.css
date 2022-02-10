@@ -1,0 +1,106 @@
+
+.container-especialidades{
+    max-width: 1024px;
+    margin: 0 auto;
+    height: 10em;
+    text-align: center;
+}
+.container-especialidades div{
+    margin: 2em auto;
+}
+.container-especialidades div a{
+   text-decoration: none; 
+   font-size: 1.2em;
+   margin: 0 1em;
+   color: gray;
+   border-bottom: 1px solid #1f8e96ee;
+}
+.container-especialidades div a:hover{
+    color: #033e42ee;
+}
+.container-especialidades h2{
+    margin-top: 2em;
+    color: gray;  
+}
+.ortopedia,.pediatria,.geriatria,.psicologia,.fisioterapia {
+    max-width: 1024px;
+    margin: 0 auto;
+    
+}
+h2, p{
+    text-align: center;
+    margin: 2em;
+    color: grey;
+}
+.horarios{
+    display: flex;
+    flex-direction: row;
+   
+}
+.horarios img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    display: inline-block;
+
+}
+.horarios table{
+    width: 100%;
+    
+}
+.horarios table thead {
+    background-color: #1f8e96ee;
+    color: white;
+    height: 20%;
+    
+}
+.horarios table td{
+    width: calc(100%/3);
+    height: calc(80% / 5);
+    font-size: 0.8em;
+    color: gray;
+    
+    
+}
+.horarios table tbody tr:nth-of-type(2n + 1){
+    background-color: #eee;
+}
+ 
+footer{
+    margin-top: 50px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 543px){
+    .container-header{
+        display: block;
+        text-align: center;
+        height: 20%;
+    }
+    .container-header a img {
+        width: 8em;
+    }
+    .container-header nav  {
+        height: 2.5em;
+        background-color: #05eeffee;
+        border-top: 1px solid ;
+       
+    }
+    .container-header nav ul{
+        padding-top: 0.5em;
+    }
+   
+    .horarios img{
+        display: none;
+    }
+    .container-especialidades div a {
+        display: inline-block;
+        margin-bottom: 10px;
+
+    }
+}
+@media only screen and (min-device-width : 544px) and (max-device-width : 800px){
+    .horarios img{
+        display: none;
+    }
+    
+}
